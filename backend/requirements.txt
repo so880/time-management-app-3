@@ -1,0 +1,5 @@
+fastapi[standard]
+sqlalchemy
+psutil
+pytest
+jpholiday
