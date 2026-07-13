@@ -15,9 +15,6 @@ React + FastAPI + SQLite の3層構成に、Google Apps Script / iPhoneショー
 |---|---|---|---|
 | ![home](docs/screenshot_home.png) | ![life](docs/screenshot_life.png) | ![money](docs/screenshot_money.png) | ![job](docs/screenshot_job.png) |
 
-> スクリーンショットの撮り方：アプリ起動中に `Win + Shift + S` で撮影し、
-> `docs/screenshot_home.png` などの名前で保存してください。
-
 ---
 
 ## なにを解決するアプリか
@@ -122,7 +119,7 @@ React + FastAPI + SQLite の3層構成に、Google Apps Script / iPhoneショー
 │   │   ├── db_sync.py      # PC間共有（DBの自動プッシュ）
 │   │   └── logic.py / models.py / crud.py / migrate.py / database.py
 │   ├── tests/           # pytest（25テスト）
-│   └── data/            # SQLite本体（★gitには含めない）
+│   └── data/            # SQLite本体（git管理外・個人データ）
 ├── gas/gas_bridge.gs    # Apps Scriptブリッジ（各自のアカウントにデプロイして使う）
 ├── docs/SETUP_GOOGLE_SYNC.md  # Google連携・iPhoneショートカットの手順書
 ├── quick_widget.py / blocker.py / pc_tracker.py   # 常駐ツール
