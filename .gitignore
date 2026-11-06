@@ -1,0 +1,77 @@
+# ============================================================
+# 依存関係・ビルド生成物
+# ============================================================
+node_modules/
+dist/
+venv/
+
+# python cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# ============================================================
+# ★個人データ（絶対に公開しない）
+# ============================================================
+# SQLite本体：Gmailアプリパスワード・Anthropic APIキー・GASトークン・
+# 全支出/生活/就活記録が入っている
+backend/data/
+*.db
+*.db.bak
+
+# 個人の背景画像
+backend/bg_images/
+
+# 緊急解除の理由ログ（私的な内容）
+logs/
+*.log
+
+# Google API の認証ファイル（現在は未使用だが将来作った場合の保険）
+credentials*.json
+token*.json
+client_secret*.json
+
+# 環境変数ファイル（.env.example は説明用テンプレートなので公開してよい）
+.env
+.env.*
+!.env.example
+
+# ============================================================
+# ★個人の生活情報が書かれた一回きりのスクリプト（公開する価値もない）
+# ============================================================
+setup_fixed_money.py
+populate_timetable.py
+populate_habits.py
+register_toeic.py
+check_import.py
+check_quick.py
+check_overlap.py
+
+# 公開用コピーの作成スクリプトとそのレポート（公開する必要がない）
+make_public_copy.py
+make_public_copy.bat
+public_copy_report.txt
+
+# 旧データ（万一コピーが紛れた場合の保険）
+settings.json
+session_state.json
+activity_log.csv
+
+# ============================================================
+# 2026-11-03 追加：夜間作業の退避・成果物フォルダ、診断出力、ビルド生成物
+# （公開する価値がなく、_night には習慣名などの私的な内容も含む）
+# ============================================================
+_backup_*/
+_night_*/
+_trash_*/
+frontend/dist/
+logs/
+*_out.txt
+*_out_*.txt
+diag.txt
+guard_hang.txt
+.vite/
+.pytest_cache/
+
+# 公開コピーの複製・公開レポート
+public_copy_report.txt
